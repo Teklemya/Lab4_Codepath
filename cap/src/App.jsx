@@ -13,11 +13,27 @@ function App() {
     height: "",
    })
   const Access_key = import.meta.env.APIFLASH_KEY 
+  const submitForm = () => {
+ 
 
+  }
   return (
-      <div className='Whole page'>
-        const 
-      </div>
+    <div className="whole-page">
+    <h1>Build Your Own Screenshot! 📸</h1>
+    
+    <APIForm
+      inputs={inputs}
+      handleChange={(e) =>
+        setInputs((prevState) => ({
+          ...prevState,
+          [e.target.name]: e.target.value.trim(),
+        }))
+      }
+      onSubmit={submitForm}
+    />
+    <br></br>
+
+  </div>
   )
 }
 
