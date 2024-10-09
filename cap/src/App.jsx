@@ -14,9 +14,14 @@ function App() {
    })
   const Access_key = import.meta.env.APIFLASH_KEY 
   const submitForm = () => {
- 
-
-  }
+    let defaultValues = {
+      format: "jpeg",
+      no_ads: "true",
+      no_cookie_banners: "true",
+      width: "1920",
+      height: "1080",
+    };
+  };
   return (
     <div className="whole-page">
     <h1>Build Your Own Screenshot! 📸</h1>
